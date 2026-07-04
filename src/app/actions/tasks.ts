@@ -5,6 +5,7 @@ import { prisma } from "@/lib/prisma"
 import { authOptions } from "@/lib/auth"
 import { getServerSession } from "next-auth/next"
 import { revalidatePath } from "next/cache"
+import crypto from "crypto"
 
 interface CreateTaskInput {
   title: string
@@ -42,7 +43,9 @@ export async function createTask(data: CreateTaskInput) {
 
     const newTask = await prisma.task.create({
       data: {
+        id: crypto.randomUUID(),
         title: data.title,
+        status: "TODO",
         priority: (data.priority as TaskPriority) ?? TaskPriority.MEDIUM,
         dueDate: data.dueDate ? new Date(data.dueDate) : null,
         goalId: data.goalId || null,
