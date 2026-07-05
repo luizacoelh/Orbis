@@ -96,7 +96,7 @@ export default function GoalCard({ goal }: GoalCardProps) {
               </span>
             </div>
             
-            <p className="text-sm text-zinc-400 line-clamp-3 min-h-[60px]">
+            <p className="text-sm text-zinc-400 line-clamp-3 min-h-15">
               {goal.description || "Nenhuma descrição fornecida."}
             </p>
           </div>
