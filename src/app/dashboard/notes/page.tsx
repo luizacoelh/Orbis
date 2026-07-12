@@ -1,8 +1,7 @@
 import { getNotes } from "@/app/actions/notes"
 import { getGoals } from "@/app/actions/goals"
 import CreateNoteModal from "@/components/CreateNoteModal"
-import NoteCard from "@/components/NoteCard"
-import { FileText } from "lucide-react"
+import NoteList from "@/components/NoteList"
 
 export default async function NotesPage() {
   const [notesRes, goalsRes] = await Promise.all([getNotes(), getGoals()])
@@ -24,23 +23,8 @@ export default async function NotesPage() {
         <CreateNoteModal goals={goals} />
       </div>
 
-      {notes.length === 0 ? (
-        <div className="flex flex-col items-center justify-center text-center p-12 border border-dashed border-zinc-800 rounded-2xl bg-zinc-900/20">
-          <div className="p-4 bg-zinc-900 border border-zinc-800 rounded-full text-zinc-500 mb-4">
-            <FileText className="w-8 h-8" />
-          </div>
-          <h3 className="text-lg font-semibold text-zinc-200">Nenhuma nota encontrada</h3>
-          <p className="text-sm text-zinc-400 max-w-sm mt-1">
-            Crie sua primeira nota para começar a registrar seus aprendizados.
-          </p>
-        </div>
-      ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {notes.map((note) => (
-            <NoteCard key={note.id} note={note} goals={goals} />
-          ))}
-        </div>
-      )}
+      {/* Gerenciador client-side de filtros e busca */}
+      <NoteList initialNotes={notes} goals={goals} />
     </div>
   )
 }
