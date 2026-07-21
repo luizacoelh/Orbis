@@ -5,7 +5,7 @@ services:
     environment:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: senha
-      POSTGRES_DB: nexus
+      POSTGRES_DB: orbis
     ports:
       - "5433:5432"
     volumes:

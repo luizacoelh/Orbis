@@ -1,4 +1,4 @@
-# PRD — Sistema Pessoal de Organização (nome provisório: "Nexus")
+# PRD — Sistema Pessoal de Organização (nome provisório: "Orbis")
 
 ## 1. Problema
 

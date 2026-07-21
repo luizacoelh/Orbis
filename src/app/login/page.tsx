@@ -39,7 +39,7 @@ export default function LoginPage() {
     <div className="flex min-h-screen items-center justify-center bg-zinc-950 px-4 text-zinc-50">
       <div className="w-full max-w-md space-y-6 rounded-2xl border border-zinc-800 bg-zinc-900 p-8 shadow-xl">
         <div className="space-y-2 text-center">
-          <h1 className="text-3xl font-bold tracking-tight text-white">Entrar no Nexus</h1>
+          <h1 className="text-3xl font-bold tracking-tight text-white">Entrar no Orbis</h1>
           <p className="text-sm text-zinc-400">Insira suas credenciais para acessar sua conta</p>
         </div>
 

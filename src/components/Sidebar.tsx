@@ -32,7 +32,7 @@ export default function Sidebar() {
     <>
       {/* BOTÃO HAMBÚRGUER (Visível apenas em Mobile) */}
       <div className="fixed top-0 left-0 right-0 h-16 bg-zinc-950 border-b border-zinc-900 flex items-center justify-between px-4 z-40 md:hidden">
-        <span className="text-xl font-bold tracking-wider text-violet-500">Nexus</span>
+        <span className="text-xl font-bold tracking-wider text-violet-500">Orbis</span>
         <button 
           onClick={toggleSidebar}
           className="p-2 text-zinc-400 hover:text-zinc-200 focus:outline-none"
@@ -59,7 +59,7 @@ export default function Sidebar() {
       `}>
         <div className="flex items-center justify-between border-b border-zinc-900 pb-4 mb-6 md:mb-4">
           <span className="text-2xl font-bold tracking-wider bg-linear-to-r from-violet-400 to-indigo-400 bg-clip-text text-transparent">
-            Nexus
+            Orbis
           </span>
           <button 
             onClick={closeSidebar}

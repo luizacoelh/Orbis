@@ -1,8 +1,8 @@
-# Nexus
+# Orbis
 
 Sistema pessoal de organização — metas, tarefas e anotações conectadas entre si, em vez de ficarem isoladas em telas separadas. A ideia central é que uma meta funcione como um hub: ela puxa as tarefas e notas relacionadas, criando uma estrutura de contexto em vez de listas soltas.
 
-**Demo:** [nexus-teal-psi.vercel.app](https://nexus-teal-psi.vercel.app)
+**Demo:** [orbis-teal-psi.vercel.app](https://orbis-teal-psi.vercel.app)
 
 ---
 
@@ -32,8 +32,8 @@ Esse projeto é também meu espaço de aprendizado prático: estou usando ele pr
 Pré-requisitos: Node.js, Docker Desktop.
 
 ```bash
-git clone https://github.com/luizacoelh/Nexus.git
-cd Nexus
+git clone https://github.com/luizacoelh/Orbis.git
+cd Orbis
 npm install
 ```
 

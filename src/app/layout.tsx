@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Nexus",
+  title: "Orbis",
   description: "Sistema pessoal de organization — metas, tarefas e notas conectadas.",
 }
 

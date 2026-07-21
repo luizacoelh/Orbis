@@ -38,7 +38,7 @@ export default function RegisterPage() {
       <div className="w-full max-w-md space-y-6 rounded-2xl border border-zinc-800 bg-zinc-900 p-8 shadow-xl">
         <div className="space-y-2 text-center">
           <h1 className="text-3xl font-bold tracking-tight text-white">Criar conta</h1>
-          <p className="text-sm text-zinc-400">Comece a organizar suas metas no Nexus</p>
+          <p className="text-sm text-zinc-400">Comece a organizar suas metas no Orbis</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">

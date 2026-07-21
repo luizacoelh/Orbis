@@ -26,9 +26,9 @@ GitHub OAuth não exige verificação de domínio e o setup leva menos de 5 minu
 GitHub → Settings → Developer Settings → OAuth Apps → New OAuth App
 
 ```
-Application name: Nexus
-Homepage URL: https://nexus-teal-psi.vercel.app
-Authorization callback URL: https://nexus-teal-psi.vercel.app/api/auth/callback/github
+Application name: Orbis
+Homepage URL: https://orbis-teal-psi.vercel.app
+Authorization callback URL: https://orbis-teal-psi.vercel.app/api/auth/callback/github
 ```
 
 Para local, cria uma segunda OAuth App (ou usa a mesma trocando a callback URL por `http://localhost:3000/api/auth/callback/github`). O mais limpo é ter duas apps separadas: uma pra dev, uma pra prod.

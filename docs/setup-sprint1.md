@@ -3,7 +3,7 @@
 ## 1. Criar o repositório
 
 ```bash
-mkdir nexus && cd nexus
+mkdir orbis && cd orbis
 git init
 npx create-next-app@latest . --typescript --tailwind --app --eslint --src-dir --import-alias "@/*"
 ```
@@ -16,7 +16,7 @@ Quando perguntar:
 ## 2. Estrutura de pastas inicial
 
 ```
-nexus/
+orbis/
 ├── prisma/
 │   └── schema.prisma
 ├── src/
@@ -56,7 +56,7 @@ Isso cria `prisma/schema.prisma` e `.env`.
 
 `.env` (não vai pro Git):
 ```
-DATABASE_URL="postgresql://user:senha@localhost:5432/nexus"
+DATABASE_URL="postgresql://user:senha@localhost:5432/orbis"
 NEXTAUTH_SECRET="gerar com: openssl rand -base64 32"
 NEXTAUTH_URL="http://localhost:3000"
 ```
@@ -81,7 +81,7 @@ services:
     environment:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: senha
-      POSTGRES_DB: nexus
+      POSTGRES_DB: orbis
     ports:
       - "5432:5432"
     volumes:
@@ -124,7 +124,7 @@ git commit -m "chore: setup inicial do projeto (Next.js, Prisma, Tailwind)"
 ## 9. Criar repositório no GitHub e subir
 
 ```bash
-gh repo create nexus --private --source=. --remote=origin
+gh repo create orbis --private --source=. --remote=origin
 git push -u origin main
 ```
 
